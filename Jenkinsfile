@@ -61,7 +61,6 @@ pipeline {
                 CANARY_REPLICAS = 0
             }
             steps {
-               
                     kubeconfigId: 'kubeconfig',
                     configs: 'train-schedule-kube-canary.yml',
                     enableConfigSubstitution: true
